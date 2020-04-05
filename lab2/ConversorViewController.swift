@@ -34,11 +34,13 @@ class ConversorViewController: UIViewController {
         let placeholder = "???"
         if celsiusInput.text == nil {
             fahrenheitOutput.text = placeholder
+            celsiusInput.shake()
             return
         }
         let number = Double(celsiusInput.text!)
         if number == nil {
             fahrenheitOutput.text = placeholder
+            celsiusInput.shake()
             return
         }
         let celsius = Measurement(value: number!, unit: UnitTemperature.celsius)
@@ -58,7 +60,12 @@ extension ConversorViewController: UITextFieldDelegate {
 
         // Verify all the conditions
         if let limitedTextField = textField as? LimitedTextField {
-            return limitedTextField.verifyFields(shouldChangeCharactersIn: range, replacementString: string)
+            let value = limitedTextField.verifyFields(shouldChangeCharactersIn: range, replacementString: string)
+            if value == false {
+                // Play the shake animation
+                limitedTextField.shake()
+            }
+            return value
         }
         return true
     }

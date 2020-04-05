@@ -35,7 +35,12 @@ extension RespondViewController: UITextFieldDelegate {
 
         // Verify all the conditions
         if let limitedTextField = textField as? LimitedTextField {
-            return limitedTextField.verifyFields(shouldChangeCharactersIn: range, replacementString: string)
+            let value = limitedTextField.verifyFields(shouldChangeCharactersIn: range, replacementString: string)
+            if value == false {
+                // Play the shake animation
+                limitedTextField.shake()
+            }
+            return value
         }
         return true
     }
