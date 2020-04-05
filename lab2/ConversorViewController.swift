@@ -16,6 +16,7 @@ class ConversorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.celsiusInput.delegate = self
+        self.celsiusInput.maxLength = 7
         self.celsiusInput.allowedCharInString = ".0123456789"
     }
 
