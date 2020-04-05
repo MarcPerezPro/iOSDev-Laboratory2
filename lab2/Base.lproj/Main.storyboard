@@ -67,22 +67,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="value2" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-FW-twc">
-                                <rect key="frame" x="197.5" y="64" width="196.5" height="81.5"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="value1" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXJ-0K-QAX">
+                                <rect key="frame" x="20" y="64" width="188" height="81.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="value1" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UXJ-0K-QAX">
-                                <rect key="frame" x="20" y="64" width="188" height="81.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLM-uw-7m1">
+                                <rect key="frame" x="10" y="175.5" width="71.5" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Substract:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Cs-Nz-PXG">
+                                <rect key="frame" x="10" y="222.5" width="141.5" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="value2" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-FW-twc">
+                                <rect key="frame" x="197.5" y="64" width="196.5" height="81.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="HLM-uw-7m1" firstAttribute="top" secondItem="UXJ-0K-QAX" secondAttribute="bottom" constant="30" id="3QC-o3-Xa6"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="R8s-FW-twc" secondAttribute="trailing" constant="20" id="94j-K5-WvJ"/>
                             <constraint firstItem="UXJ-0K-QAX" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="9G0-La-UD4"/>
+                            <constraint firstItem="8Cs-Nz-PXG" firstAttribute="top" secondItem="HLM-uw-7m1" secondAttribute="bottom" constant="8" id="AgX-mc-xmf"/>
+                            <constraint firstItem="HLM-uw-7m1" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="10" id="AhM-rs-QSZ"/>
                             <constraint firstItem="UXJ-0K-QAX" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="20" id="Iqx-qT-uwB"/>
-                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="R8s-FW-twc" secondAttribute="trailing" constant="20" id="cAp-Qt-UQD"/>
+                            <constraint firstItem="8Cs-Nz-PXG" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="10" id="MaF-Rg-KCt"/>
                             <constraint firstItem="R8s-FW-twc" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="20" id="jRr-kv-A3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
