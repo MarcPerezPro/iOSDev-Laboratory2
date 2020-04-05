@@ -12,11 +12,15 @@ class RespondViewController: UIViewController {
 
     @IBOutlet weak var textField: LimitedTextField!
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var copyTextButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.textField.delegate = self
+        self.textField.valueType = .onlyLetters
+    }
+
+    @IBAction func onCopyTextButtonTapped(_ sender: UIButton) {
+        label.text = textField.text
     }
 }
 

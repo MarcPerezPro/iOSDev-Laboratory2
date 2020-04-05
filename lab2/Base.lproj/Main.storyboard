@@ -223,6 +223,9 @@
                                 <accessibility key="accessibilityConfiguration" label="Copy text"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <state key="normal" title="Copy text"/>
+                                <connections>
+                                    <action selector="onCopyTextButtonTapped:" destination="HdU-Kn-1y6" eventType="touchUpInside" id="CPe-hz-ATw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -240,7 +243,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Respond" image="doc" catalog="system" id="x60-CO-Zic"/>
                     <connections>
-                        <outlet property="copyTextButton" destination="9jJ-HM-9Vs" id="ds5-gE-86e"/>
                         <outlet property="label" destination="VA9-dm-ibx" id="IEI-zW-tof"/>
                         <outlet property="textField" destination="ISn-gi-eN4" id="kpn-Ka-33t"/>
                     </connections>
