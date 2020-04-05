@@ -78,11 +78,17 @@
                                 <rect key="frame" x="15" y="64" width="188" height="81.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="onValue1Entered:" destination="8rJ-Kc-sve" eventType="editingDidEnd" id="l8A-P7-pQx"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="value2" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-FW-twc" customClass="LimitedTextField" customModule="lab2" customModuleProvider="target">
                                 <rect key="frame" x="208" y="64" width="191" height="82"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="onValue2Entered:" destination="8rJ-Kc-sve" eventType="editingDidEnd" id="jo0-DV-1H8"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLM-uw-7m1">
                                 <rect key="frame" x="10" y="175.5" width="77" height="39"/>
@@ -182,6 +188,11 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Calculator" image="number.square" catalog="system" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="divResult" destination="Lch-y4-sGk" id="uMt-EM-MDz"/>
+                        <outlet property="multResult" destination="fXr-yJ-EBg" id="QIp-LF-WhC"/>
+                        <outlet property="parityResult" destination="c8z-uu-vjS" id="zG4-0S-Mon"/>
+                        <outlet property="subsResult" destination="hcX-Ys-lrP" id="8RJ-cR-y4S"/>
+                        <outlet property="sumResult" destination="7sT-M0-wNC" id="xyZ-oT-Ebo"/>
                         <outlet property="value1" destination="UXJ-0K-QAX" id="g6D-8V-Iwb"/>
                         <outlet property="value2" destination="R8s-FW-twc" id="iUK-hF-Fow"/>
                     </connections>
