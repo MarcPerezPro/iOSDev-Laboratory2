@@ -201,37 +201,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA9-dm-ibx">
-                                <rect key="frame" x="186" y="314" width="117" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA9-dm-ibx">
+                                <rect key="frame" x="150" y="145" width="117" height="60"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-HM-9Vs">
-                                <rect key="frame" x="254" y="187" width="92" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ISn-gi-eN4">
-                                <rect key="frame" x="67" y="195" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Label" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ISn-gi-eN4">
+                                <rect key="frame" x="15" y="64" width="227" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jJ-HM-9Vs">
+                                <rect key="frame" x="267" y="64" width="132" height="51"/>
+                                <accessibility key="accessibilityConfiguration" label="Copy text"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Copy text"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ks4-tJ-cTb" firstAttribute="trailing" secondItem="VA9-dm-ibx" secondAttribute="trailing" constant="147" id="5y1-HY-JQf"/>
+                            <constraint firstItem="ks4-tJ-cTb" firstAttribute="trailing" secondItem="9jJ-HM-9Vs" secondAttribute="trailing" constant="15" id="M3b-MW-vqc"/>
+                            <constraint firstItem="ISn-gi-eN4" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="Tpg-gj-hAd"/>
+                            <constraint firstItem="9jJ-HM-9Vs" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="U47-0L-iUr"/>
+                            <constraint firstItem="9jJ-HM-9Vs" firstAttribute="leading" secondItem="ISn-gi-eN4" secondAttribute="trailing" constant="25" id="YMb-h6-R2W"/>
+                            <constraint firstItem="VA9-dm-ibx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ks4-tJ-cTb" secondAttribute="leading" id="gmr-qb-sni"/>
+                            <constraint firstItem="VA9-dm-ibx" firstAttribute="top" secondItem="9jJ-HM-9Vs" secondAttribute="bottom" constant="30" id="jeE-HI-2Te"/>
+                            <constraint firstItem="ISn-gi-eN4" firstAttribute="leading" secondItem="ks4-tJ-cTb" secondAttribute="leading" constant="15" id="vZA-ek-FkE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ks4-tJ-cTb"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Respond" image="doc" catalog="system" id="x60-CO-Zic"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-dC-QHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749" y="1004"/>
+            <point key="canvasLocation" x="747.82608695652175" y="1003.7946428571428"/>
         </scene>
     </scenes>
     <resources>
