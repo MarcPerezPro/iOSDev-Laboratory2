@@ -16,6 +16,7 @@
 		492B69322439F5AE007877D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 492B69302439F5AE007877D7 /* LaunchScreen.storyboard */; };
 		492B693D2439F5AE007877D7 /* lab2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B693C2439F5AE007877D7 /* lab2Tests.swift */; };
 		492B69482439F5AE007877D7 /* lab2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B69472439F5AE007877D7 /* lab2UITests.swift */; };
+		492B69582439FDAC007877D7 /* RespondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B69572439FDAC007877D7 /* RespondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		492B69432439F5AE007877D7 /* lab2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lab2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		492B69472439F5AE007877D7 /* lab2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab2UITests.swift; sourceTree = "<group>"; };
 		492B69492439F5AE007877D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		492B69572439FDAC007877D7 /* RespondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		492B69222439F5AB007877D7 /* lab2 */ = {
 			isa = PBXGroup;
 			children = (
+				492B69572439FDAC007877D7 /* RespondViewController.swift */,
 				492B69232439F5AB007877D7 /* AppDelegate.swift */,
 				492B69252439F5AB007877D7 /* SceneDelegate.swift */,
 				492B69272439F5AB007877D7 /* FirstViewController.swift */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				492B69582439FDAC007877D7 /* RespondViewController.swift in Sources */,
 				492B692A2439F5AB007877D7 /* SecondViewController.swift in Sources */,
 				492B69282439F5AB007877D7 /* FirstViewController.swift in Sources */,
 				492B69242439F5AB007877D7 /* AppDelegate.swift in Sources */,
