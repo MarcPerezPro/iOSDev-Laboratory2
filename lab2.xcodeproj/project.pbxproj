@@ -17,6 +17,7 @@
 		492B69582439FDAC007877D7 /* RespondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B69572439FDAC007877D7 /* RespondViewController.swift */; };
 		492B695B243A0871007877D7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B6959243A0871007877D7 /* CalculatorViewController.swift */; };
 		492B695C243A0871007877D7 /* ConversorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B695A243A0871007877D7 /* ConversorViewController.swift */; };
+		492B695E243A77A8007877D7 /* LimitedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492B695D243A77A8007877D7 /* LimitedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		492B69572439FDAC007877D7 /* RespondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespondViewController.swift; sourceTree = "<group>"; };
 		492B6959243A0871007877D7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		492B695A243A0871007877D7 /* ConversorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversorViewController.swift; sourceTree = "<group>"; };
+		492B695D243A77A8007877D7 /* LimitedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				492B692E2439F5AE007877D7 /* Assets.xcassets */,
 				492B69302439F5AE007877D7 /* LaunchScreen.storyboard */,
 				492B69332439F5AE007877D7 /* Info.plist */,
+				492B695D243A77A8007877D7 /* LimitedTextField.swift */,
 			);
 			path = lab2;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				492B69582439FDAC007877D7 /* RespondViewController.swift in Sources */,
 				492B695C243A0871007877D7 /* ConversorViewController.swift in Sources */,
+				492B695E243A77A8007877D7 /* LimitedTextField.swift in Sources */,
 				492B69242439F5AB007877D7 /* AppDelegate.swift in Sources */,
 				492B695B243A0871007877D7 /* CalculatorViewController.swift in Sources */,
 				492B69262439F5AB007877D7 /* SceneDelegate.swift in Sources */,
