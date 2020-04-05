@@ -12,12 +12,14 @@ class ConversorViewController: UIViewController {
 
     @IBOutlet weak var celsiusInput: LimitedTextField!
     @IBOutlet weak var fahrenheitOutput: UILabel!
+    var fahrenheitOutputPlaceholder: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.celsiusInput.delegate = self
         self.celsiusInput.maxLength = 7
         self.celsiusInput.allowedCharInString = ".0123456789"
+        fahrenheitOutputPlaceholder = fahrenheitOutput.text
     }
 
     /// MeasurementFormatter sucks, so I need a workarroud
@@ -32,15 +34,14 @@ class ConversorViewController: UIViewController {
     }
     
     @IBAction func onCelsiusEntered(_ sender: LimitedTextField) {
-        let placeholder = "???"
         if celsiusInput.text == nil {
-            fahrenheitOutput.text = placeholder
+            fahrenheitOutput.text = fahrenheitOutputPlaceholder
             celsiusInput.shake()
             return
         }
         let number = Double(celsiusInput.text!)
         if number == nil {
-            fahrenheitOutput.text = placeholder
+            fahrenheitOutput.text = fahrenheitOutputPlaceholder
             celsiusInput.shake()
             return
         }
