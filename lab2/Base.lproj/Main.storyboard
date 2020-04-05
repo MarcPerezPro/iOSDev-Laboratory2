@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Item-->
+        <!--Respond-->
         <scene sceneID="Xfi-BX-x4T">
             <objects>
                 <viewController id="HdU-Kn-1y6" customClass="RespondViewController" customModule="lab2" customModuleProvider="target" sceneMemberID="viewController">
@@ -106,8 +106,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ks4-tJ-cTb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="x60-CO-Zic"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBarItem key="tabBarItem" title="Respond" id="x60-CO-Zic"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-dC-QHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
