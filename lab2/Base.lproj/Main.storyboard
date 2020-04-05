@@ -106,7 +106,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ks4-tJ-cTb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Respond" id="x60-CO-Zic"/>
+                    <tabBarItem key="tabBarItem" title="Respond" image="doc" catalog="system" id="x60-CO-Zic"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-dC-QHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,6 +114,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc" catalog="system" width="115" height="128"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
