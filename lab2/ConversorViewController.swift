@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  ConversorViewController.swift
 //  lab2
 //
 //  Created by Marc PEREZ on 5/4/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ConversorViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
