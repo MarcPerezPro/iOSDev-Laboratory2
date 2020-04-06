@@ -251,6 +251,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ks4-tJ-cTb" firstAttribute="trailing" secondItem="9jJ-HM-9Vs" secondAttribute="trailing" constant="15" id="M3b-MW-vqc"/>
                             <constraint firstItem="ISn-gi-eN4" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="Tpg-gj-hAd"/>
@@ -261,6 +262,12 @@
                             <constraint firstItem="9jJ-HM-9Vs" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="yLy-KC-hFg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ks4-tJ-cTb"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vYA-KV-3Dj" appends="YES" id="btj-Nh-HcM"/>
+                            <outletCollection property="gestureRecognizers" destination="3ZB-hF-UCY" appends="YES" id="8gC-35-LJi"/>
+                            <outletCollection property="gestureRecognizers" destination="Tim-hT-oxg" appends="YES" id="pIR-lg-u20"/>
+                            <outletCollection property="gestureRecognizers" destination="wza-wN-W8m" appends="YES" id="K8N-x1-wUh"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Respond" image="doc" catalog="system" id="x60-CO-Zic"/>
                     <connections>
@@ -269,10 +276,73 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPP-dC-QHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="vYA-KV-3Dj">
+                    <connections>
+                        <segue destination="Z2A-bS-KSS" kind="show" id="K5a-lG-VU2"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="3ZB-hF-UCY">
+                    <connections>
+                        <segue destination="Z2A-bS-KSS" kind="show" id="EpE-s5-YAv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="Tim-hT-oxg">
+                    <connections>
+                        <segue destination="Z2A-bS-KSS" kind="show" id="KND-Fw-yYW"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="wza-wN-W8m">
+                    <connections>
+                        <segue destination="Z2A-bS-KSS" kind="show" id="V8g-xy-efQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="747.82608695652175" y="1003.7946428571428"/>
         </scene>
+        <!--Gesture View Controller-->
+        <scene sceneID="aGi-yy-25h">
+            <objects>
+                <viewController id="Z2A-bS-KSS" customClass="GestureViewController" customModule="lab2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ct-lt-klI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIRECTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r02-Xj-sXk">
+                                <rect key="frame" x="163" y="32" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="r02-Xj-sXk" firstAttribute="top" secondItem="knB-qx-Noq" secondAttribute="top" constant="32" id="JcX-U2-ilS"/>
+                            <constraint firstItem="r02-Xj-sXk" firstAttribute="centerX" secondItem="knB-qx-Noq" secondAttribute="centerX" id="aQN-Fy-Fmq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="knB-qx-Noq"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="WnV-vw-btx" appends="YES" id="UTZ-4u-2Cm"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="CY7-g3-mAE"/>
+                    <connections>
+                        <outlet property="directionLabel" destination="r02-Xj-sXk" id="Fb0-yE-5KW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B6M-oL-Z45" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="WnV-vw-btx">
+                    <connections>
+                        <action selector="onTap:" destination="Z2A-bS-KSS" id="EvZ-5i-uD2"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1410" y="863"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EpE-s5-YAv"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="doc" catalog="system" width="115" height="128"/>
         <image name="number.square" catalog="system" width="128" height="114"/>

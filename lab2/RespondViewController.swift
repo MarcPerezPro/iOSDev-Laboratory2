@@ -21,7 +21,19 @@ class RespondViewController: UIViewController {
     }
 
     @IBAction func onCopyTextButtonTapped(_ sender: UIButton) {
+        if (textField.text == nil || textField.text!.isEmpty) {
+            self.textField.shake()
+            return
+        }
         label.text = textField.text
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let swipe = sender as? UISwipeGestureRecognizer else {
+            return
+        }
+        guard let gestureVC = segue.destination as? GestureViewController else { return }
+        gestureVC.direction = swipe.direction
     }
 }
 
