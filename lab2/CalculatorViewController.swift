@@ -28,10 +28,10 @@ class CalculatorViewController: UIViewController {
         super.viewDidLoad()
         self.value1.delegate = self
         self.value1.valueType = .onlyNumbers
-        self.value1.maxLength = 8
+        self.value1.maxLength = 6
         self.value2.delegate = self
         self.value2.valueType = .onlyNumbers
-        self.value2.maxLength = 8
+        self.value2.maxLength = 6
         
 //        sumResultPlaceholder = sumResult.text
 //        subsResultPlaceholder = subsResult.text
