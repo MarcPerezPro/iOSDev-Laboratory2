@@ -180,6 +180,7 @@
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="hcX-Ys-lrP" secondAttribute="trailing" constant="30" id="h0f-iy-r3Y"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="7sT-M0-wNC" secondAttribute="trailing" constant="30" id="hov-Hm-mQ0"/>
                             <constraint firstItem="R8s-FW-twc" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" constant="20" id="jRr-kv-A3l"/>
+                            <constraint firstItem="R8s-FW-twc" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" multiplier="0.461353" id="nVb-dw-NVh"/>
                             <constraint firstItem="mRG-86-ggh" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="10" id="r8S-1V-D8v"/>
                             <constraint firstItem="Lch-y4-sGk" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tfh-Pr-2vi" secondAttribute="trailing" constant="8" symbolic="YES" id="vv0-hI-KEL"/>
                             <constraint firstItem="fXr-yJ-EBg" firstAttribute="top" secondItem="hcX-Ys-lrP" secondAttribute="bottom" constant="8" id="zUj-Lj-xyv"/>
