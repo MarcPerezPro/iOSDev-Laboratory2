@@ -229,7 +229,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA9-dm-ibx">
-                                <rect key="frame" x="150" y="145" width="117" height="60"/>
+                                <rect key="frame" x="148.5" y="145" width="117" height="60"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
@@ -252,14 +252,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ks4-tJ-cTb" firstAttribute="trailing" secondItem="VA9-dm-ibx" secondAttribute="trailing" constant="147" id="5y1-HY-JQf"/>
                             <constraint firstItem="ks4-tJ-cTb" firstAttribute="trailing" secondItem="9jJ-HM-9Vs" secondAttribute="trailing" constant="15" id="M3b-MW-vqc"/>
                             <constraint firstItem="ISn-gi-eN4" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="Tpg-gj-hAd"/>
-                            <constraint firstItem="9jJ-HM-9Vs" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="U47-0L-iUr"/>
                             <constraint firstItem="9jJ-HM-9Vs" firstAttribute="leading" secondItem="ISn-gi-eN4" secondAttribute="trailing" constant="25" id="YMb-h6-R2W"/>
-                            <constraint firstItem="VA9-dm-ibx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ks4-tJ-cTb" secondAttribute="leading" id="gmr-qb-sni"/>
+                            <constraint firstItem="VA9-dm-ibx" firstAttribute="centerX" secondItem="ks4-tJ-cTb" secondAttribute="centerX" id="i23-kt-RjI"/>
                             <constraint firstItem="VA9-dm-ibx" firstAttribute="top" secondItem="9jJ-HM-9Vs" secondAttribute="bottom" constant="30" id="jeE-HI-2Te"/>
                             <constraint firstItem="ISn-gi-eN4" firstAttribute="leading" secondItem="ks4-tJ-cTb" secondAttribute="leading" constant="15" id="vZA-ek-FkE"/>
+                            <constraint firstItem="9jJ-HM-9Vs" firstAttribute="top" secondItem="ks4-tJ-cTb" secondAttribute="top" constant="20" id="yLy-KC-hFg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ks4-tJ-cTb"/>
                     </view>

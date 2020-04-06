@@ -17,6 +17,7 @@ class RespondViewController: UIViewController {
         super.viewDidLoad()
         self.textField.delegate = self
         self.textField.valueType = .onlyLetters
+        self.textField.maxLength = 8
     }
 
     @IBAction func onCopyTextButtonTapped(_ sender: UIButton) {
